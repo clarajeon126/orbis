@@ -39,12 +39,37 @@
                 <h1 id="title" style="font-size: 100px">Apply for a Job</h1>
         </div>
         <img id="line" src="images/line.png">
-        <form method="post">
-                First name:<br>
-                <input type="text" name="textdata" value=""><br>
-                Last name:<br>
-                <input type="text" name="textdata" value=""><br><br>
-                <input type="submit" value="Submit">
+        <form id="form" method="post">
+                <fieldset>
+                                <legend>Basic Information</legend>
+                                        First name:<br>
+                                        <input type="text" name="firstname" value=""><br>
+                                        Last name:<br>
+                                        <input type="text" name="lastname" value=""><br>
+                                        Email:<br>
+                                        <input type="email" name="email" value=""><br>
+                                        Birthday:<br>
+                                        <input type="date" name="birthday" value=""><br>
+                </fieldset>
+                <fieldset>
+                                <legend>Skills</legend>
+                                        Education:<br>
+                                        <textarea name="education" rows="15" cols="200"> 
+                                        </textarea><br>
+                                        Resume:<br>
+                                        <input type="file" name="resume" value=""><br>
+                                        Other skills<br>
+                                        <textarea name="otherskills" rows="15" cols="200"> 
+                                        </textarea>
+                </fieldset>
+                <fieldset>
+                                <legend>Job</legend>
+                                        What job do you want to apply for?<br>
+                                        <input type="text" name="job" value=""><br>
+                                        Why do you want to apply for this job?<br>
+                                        <textarea name="why" rows="15" cols="200">
+                                        </textarea>
+                </fieldset>
         </form>
               
 </body>

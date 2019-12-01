@@ -42,6 +42,8 @@
                 <h1 id="title" style="font-size: 100px">Jobs</h1>
         </div>
         <img id="line" src="images/line.png">
+        <p id="info">What is your reason you want to work at Orbis? To fly a plane? To manage tickets? To save the environment?<br>You're next career at Orbis is only a click away. Learn more about each job by clicking on the image.</p>
+
         <div class="row">
                         <div class="column">
                           <a class="trigger_popup_fricc"><img class="imagejobs" src="images/pilot.png"> </a>
@@ -49,7 +51,7 @@
                                         <span class="helper"></span>
                                         <div>
                                             <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
+                                            <p>Add any HTML<br />inside the popup box!</p>
                                         </div>
                                     </div>
                         <a class="trigger_popup_fricc"><img class="imagejobs" src="images/flightattendant.png"></a>
@@ -124,10 +126,8 @@
                 </div>
 <script>
          window.onscroll = function() {myFunction()};
-
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
-
 function myFunction() {
     if (window.pageYOffset >= sticky) {
         navbar.classList.add("sticky")
