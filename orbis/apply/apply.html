@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" />
+    <title>Apply</title>
+</head>
+<body style="margin:0px">
+    <div id="navbar">
+        <ul class="inline">
+                <li>
+                        <a href="../home/index.html">Home</a>
+                </li>
+                <li>
+                        <a href="../booking/plane.html" href="javascript:void(0)">Booking/Times</a>
+                </li>
+                <li> 
+                        <a href="../programs/program.html" href="javascript:void(0)">Skytrees</a>
+                </li>
+                <li>
+                        <a href="../jobinfo/job.html" href="javascript:void(0)">Jobs</a>
+                </li>
+                <li>
+                                <a href="../apply/apply.html" href="javascript:void(0)">Apply</a>
+                </li>
+                <div id="earthlogo" style="display: inline-block"></div>
+                                <img class="earthlogorest" style="vertical-align:text-bottom; width:32.5px; margin-left:170px; margin-top:10px;" src="images/logoearth.png" alt="logo">
+                                <img class="earthlogorest" style="vertical-align:text-bottom; width:4.1px" src="images/logor.png" alt="logo">
+                                <img class="earthlogorest" style="vertical-align:text-bottom; width:7.7px" src="images/logob.png" alt="logo">
+                                <img class="earthlogorest" style="vertical-align:text-bottom; width:1px" src="images/logoi.png" alt="logo">
+                                <img class="earthlogorest" style="vertical-align:text-bottom; width:6.4px" src="images/logos.png" alt="logo">
+                 </div>
+        </ul>    
+</div>
+<br> <br>
+        <div>
+                <h1 id="title" style="font-size: 100px">Apply for a Job</h1>
+        </div>
+        <img id="line" src="images/line.png">
+        <form method="post">
+                First name:<br>
+                <input type="text" name="textdata" value=""><br>
+                Last name:<br>
+                <input type="text" name="textdata" value=""><br><br>
+                <input type="submit" value="Submit">
+        </form>
+              
+</body>
+
+<?php
+              
+if(isset($_POST['textdata']))
+{
+$data=$_POST['textdata'];
+$fp = fopen('file.txt', 'a');
+fwrite($fp, $data);
+fclose($fp);
+}
+?>
+
+<script>
+     window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+} else {
+        navbar.classList.remove("sticky");
+        }
+}
+</script>
+</html>

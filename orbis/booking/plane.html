@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>3 Column Layout</title>
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+
+<body style="margin:0px;">
+		<div id="navbar">
+				<ul class="inline">
+						<li>
+								<a href="../home/index.html">Home</a>
+						</li>
+						<li>
+								<a href="../booking/plane.html" href="javascript:void(0)">Booking/Times</a>
+						</li>
+						<li> 
+								<a href="../programs/program.html" href="javascript:void(0)">Skytrees</a>
+						</li>
+						<li>
+								<a href="../jobinfo/job.html" href="javascript:void(0)">Jobs</a>
+						</li>
+						<li>
+										<a href="../apply/apply.html" href="javascript:void(0)">Apply</a>
+						</li>
+						<div id="earthlogo" style="display: inline-block"></div>
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:32.5px; margin-left:170px; margin-top:10px;" src="images/logoearth.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:4.1px" src="images/logor.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:7.7px" src="images/logob.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:1px" src="images/logoi.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:6.4px" src="images/logos.png" alt="logo">
+						 </div>
+				</ul>    
+		</div>
+		<br><br>
+		<div>
+                <h1 id="title" style="font-size: 100px">Booking</h1>
+        </div>
+        <img id="line" src="images/line.png">
+
+	<div class="container">
+        <h2>Sign Up</h2>
+        <form>
+            <select name="Takeoff Location">
+                <option value="atlanta">Hartsfield-Jackson Atlanta International Airport</option>
+                <option value="la">Los Angeles International Airport</option>
+                <option value="ny">John F. Kennedy International Airport</option>
+                <option value="washington">Ronald Reagan Washington National Airport </option>
+                <option value="chicago">Chicago Midway International Airport</option>
+                <option value="texas">Dallas/Fort Worth International Airport</option>
+            </select>
+            <select name="Landing Location">
+                <option value="atlanta">Hartsfield-Jackson Atlanta International Airport</option>
+                <option value="la">Los Angeles International Airport</option>
+                <option value="ny">John F. Kennedy International Airport</option>
+                <option value="washington">Ronald Reagan Washington National Airport </option>
+                <option value="chicago">Chicago Midway International Airport</option>
+                <option value="texas">Dallas/Fort Worth International Airport</option>
+            </select>
+          <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" class="form-control" id="date" placeholder="Enter date of ticket" name="date" required="true">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="childTicket">Children Tickets:</label>
+            <input type="number" class="form-control" id="childTicket" placeholder="Enter amount of tickets for children" name="childTicket" required="true">
+          </div>
+          <div class="form-group">
+                <label for="adultTicket">Adult Tickets:</label>
+                <input type="number" class="form-control" id="adultTicket" placeholder="Enter amount of tickets for adults" name="adultTicket" required="true">
+              </div>
+      <div><br></div>
+        <div>
+            <input id="Submit" type="button" value="Submit" onclick="" name="Submit" />
+        </div>
+        <select name="class" multiple>
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+              </select>
+        </form>
+	  </div>
+</body>
+<script>
+	window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+} else {
+        navbar.classList.remove("sticky");
+        }
+}
+</script>

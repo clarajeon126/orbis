@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html style="background-color:rgb(255, 255, 255)" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>orbis</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body style="margin:0px" onload="incrementCount(10)"> 
+        <div id="navbar">
+                <ul class="inline">
+                        <li>
+                                <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                                <a href="../booking/plane.html" href="javascript:void(0)">Booking/Times</a>
+                        </li>
+                        <li>
+                                <a href="../programs/program.html" href="javascript:void(0)">Skytrees</a>    
+                        </li>
+                        <li> 
+                                <a href="../jobinfo/job.html" href="javascript:void(0)">Jobs</a>
+                        </li>
+                        <li>
+                                        <a href="../apply/apply.html" href="javascript:void(0)">Apply</a>
+                        </li>
+                                <div id="earthlogo" style="display: inline-block;"></div>
+                                        <img id="logoearth" style="vertical-align: text-bottom;width:325px; margin-left:-150px; margin-top:12%" src="images/logoearth.png" alt="logo">
+                                        <img class="earthlogorest" id="logor" style="width:41px" src="images/logor.png" alt="logo">
+                                        <img class="earthlogorest" id="logob" style="width:77px" src="images/logob.png" alt="logo">
+                                        <img class="earthlogorest" id="logoi" style="width:12px" src="images/logoi.png" alt="logo">
+                                        <img class="earthlogorest" id="logos" style="width:64px" src="images/logos.png" alt="logo">
+                                </div>
+
+                </ul>    
+        </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="section1">
+                <br>
+                 <h1 id="section1">Our airline focuses on the environment by</h1>
+                 <br>
+        </div>  
+    <br><br><br><br>
+        <div class="imagesets">
+                <h1 id="intro" style="font-size: 50px;">50% less Carbon Emissions</h1>
+                                <img id="sideimage" style="float: right; margin-right: 10px" src="images/plane.png" alt="plane">
+        </div>
+
+        <div class="imagesets">
+                <h1 id="intro" style="font-size: 50px; float:right; margin-right: 260px">All Vegetarian Meals</h1>
+                <img  id="sideimage" src="images/food.jpg" alt="food">
+        </div>  
+
+        <div class="imagesets">
+                <h1 id="intro" style="font-size: 50px;">A Tree Planted Per Seat</h1>
+                <img  id="sideimage" style="float:right" src="images/trees.jpg" alt="tree">
+        </div>
+        <div id="treecounter">
+        <h1 id="intro" style="font-size: 50px;text-align:center">We have planted</h1>
+        <div style="text-align:center"class="main_container" id="id_main_container">
+                        <div class="container_inner" id="display_div_id">
+                            </div>
+         </div>
+         <h1 id="intro" style="font-size: 50px;text-align:center">Trees!</h1>
+        </div>
+    <script>
+        
+        setTimeout(function(){
+        document.getElementById('logor').style.display = 'inline-block';
+        },500);
+
+        setTimeout(function(){
+        document.getElementById('logob').style.display = 'inline-block';
+        },1000);
+
+        setTimeout(function(){
+        document.getElementById('logoi').style.display = 'inline-block';
+        },1500);
+
+        setTimeout(function(){
+        document.getElementById('logos').style.display = 'inline-block';
+        },2000);
+        
+        var counter_list = [10,10000,10000];
+         var str_counter_0 = counter_list[0];
+         var str_counter_1 = counter_list[1];
+         var str_counter_2 = counter_list[2];
+         var display_str = "";
+         var display_div = document.getElementById("display_div_id");
+       
+         function incrementCount(current_count){
+           setInterval(function(){
+             while (display_div.hasChildNodes()) {
+                 display_div.removeChild(display_div.lastChild);
+             }
+             str_counter_0++;
+             if (str_counter_0 > 99) {
+               str_counter_0 = 0;
+               str_counter_1++;
+             }
+             if(str_counter_1>99999){
+               str_counter_2++;
+             }
+             display_str = str_counter_2.toString() + str_counter_1.toString() + str_counter_0.toString();
+             for (var i = 0; i < display_str.length; i++) {
+               var new_span = document.createElement('span');
+               new_span.className = 'num_tiles';
+               new_span.innerText = display_str[i];
+               display_div.appendChild(new_span);
+             }
+           },1000);
+         }
+         window.onscroll = function() {
+                 scrollFunction();
+                 myFunction();
+         }
+
+         function scrollFunction() {
+                if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100) {
+                        document.getElementById("logor").style.marginLeft = "7px";
+                        document.getElementById("logor").style.width = "4.1px";
+                        document.getElementById("logob").style.width = "7.7px";
+                        document.getElementById("logob").style.marginLeft = "7px";
+                        document.getElementById("logoi").style.width = "1px";
+                        document.getElementById("logoi").style.marginLeft = "7px";
+                        document.getElementById("logos").style.width = "6.4px";
+                        document.getElementById("logos").style.marginLeft = "7px";
+                        document.getElementById("logoearth").style.width = "32.5px";
+                        document.getElementById("logoearth").style.marginLeft = "auto";
+                        document.getElementById("logoearth").style.marginTop = "10px";
+                        document.getElementById("earthlogo").style.display = "inline-block";
+                        document.getElementById("logoearth").style.paddingLeft = "170px";
+                } else {
+                        document.getElementById("logor").style.marginLeft = "70px";
+                        document.getElementById("logor").style.width = "41px";
+                        document.getElementById("logob").style.width = "77px";
+                        document.getElementById("logob").style.marginLeft = "70px";
+                        document.getElementById("logoi").style.width = "12px";
+                        document.getElementById("logoi").style.marginLeft = "70px";
+                        document.getElementById("logos").style.width = "64px";
+                        document.getElementById("logos").style.marginLeft = "70px";
+                        document.getElementById("logoearth").style.width = "325px"; 
+                        document.getElementById("logoearth").style.marginLeft = "-150px";
+                        document.getElementById("logoearth").style.marginTop = "12%";
+                        document.getElementById("logoearth").style.paddingLeft = "0px";
+                }
+                }
+
+                var navbar = document.getElementById("navbar");
+                var sticky = navbar.offsetTop;
+
+        function myFunction() {
+                if (window.pageYOffset >= sticky) {
+                        navbar.classList.add("sticky")
+                } else {
+                        navbar.classList.remove("sticky");
+                        }
+                }
+
+
+</script>
+</body>
+</html>

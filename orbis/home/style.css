@@ -1,0 +1,137 @@
+
+
+#logor{
+
+    display: none;
+}
+#logob{
+    display: none;
+}
+#logoi{
+    display: none;
+}
+#logos{
+    display: none;
+}
+
+#navbar ul {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    background-color:rgb(255, 255, 255);
+}
+#navbar li  {
+    float: left;
+}
+
+#navbar li a {
+    display:inline-block;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+#navbar li a:hover {
+     color: rgb(43, 196, 43);
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+#section1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+     font-weight: 300;
+    font-size: 50px;
+    background-color:#46bc22;
+    border-radius: 25px;
+    margin: 20px;
+}
+
+#intro {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 0%; 
+    margin-bottom: 0%;
+    color: rgb(105, 209, 57);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 50px;
+    border: 4px green;
+    position: relative;
+    top:200px;
+}
+
+#sideimage{
+    display: inline-block;
+    margin-left: 10px;
+    border-radius: 25px;
+    width: 50%;
+}
+.imagesets{
+    display: inline-block;
+}
+.main_container {
+    border-radius: 25px;
+    height: 100px;
+    width: auto;
+    padding: 3px;
+    margin: 2px;
+    max-width: 600px;
+    background-color: #46bc22;
+    align-content: center;
+    position:relative;
+    top: 200px;
+}
+.container_inner {
+    border-radius: 25px;
+    height: auto;
+    border: none;
+    background-color: #46bc22;
+    max-width: 600px;
+    vertical-align: center;
+    padding-top: 12px;
+    padding-left: 10px;
+    align-content: center;
+}
+.num_tiles {
+    border-radius: 25px;
+    width:30px;
+    height: 30px;
+    background-color: #ffffff;
+    color: #46bc22;
+    font-size: 60px;
+    text-align: center;
+    padding: 3px;
+    margin: 1.5px;
+    font-family: verdana;
+    vertical-align: center;
+}
+.earthlogorest{
+    vertical-align: text-bottom;
+    margin-left:70px;
+    
+}
+
+#sideinfo {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    width: 40%
+}
+#treecounter {
+    position:relative;
+    left: 400px;
+    
+}
