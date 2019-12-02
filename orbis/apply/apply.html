@@ -40,8 +40,8 @@
         </div>
         <img id="line" src="images/line.png">
         <form id="form" method="post">
-                <fieldset>
-                                <legend>Basic Information</legend>
+                <fieldset id="basic">
+                                <legend id="legend">Basic Information</legend>
                                         First name:<br>
                                         <input type="text" name="firstname" value=""><br>
                                         Last name:<br>
@@ -51,8 +51,8 @@
                                         Birthday:<br>
                                         <input type="date" name="birthday" value=""><br>
                 </fieldset>
-                <fieldset>
-                                <legend>Skills</legend>
+                <fieldset id="basic">
+                                <legend id="legend">Skills</legend>
                                         Education:<br>
                                         <textarea name="education" rows="15" cols="200"> 
                                         </textarea><br>
@@ -62,15 +62,36 @@
                                         <textarea name="otherskills" rows="15" cols="200"> 
                                         </textarea>
                 </fieldset>
-                <fieldset>
-                                <legend>Job</legend>
+                <fieldset id="basic">
+                                <legend id="legend">Job</legend>
                                         What job do you want to apply for?<br>
                                         <input type="text" name="job" value=""><br>
                                         Why do you want to apply for this job?<br>
                                         <textarea name="why" rows="15" cols="200">
                                         </textarea>
                 </fieldset>
+                <input type="submit" name="submit">
         </form>
+        <footer>
+                        <div class="footer">
+                                <br> <br>
+                        <ul id="left">
+                                <li>
+                                        <a href=""><img id="footerimage" src="images/google.png"></a>
+                                </li>
+                                <li>
+                                        <a href=""><img id="footerimage"src="images/facebook.png"></a>
+                                </li>
+                                <li>
+                                        <a href=""><img id="footerimage" src="images/instagram.png"></a>
+                                </li>
+                                <li>
+                                        <a id="credits" href="../credits/credits.html">Credits</a>
+                                </li>
+                        </ul>
+                        <br><br>
+                </div>
+                </footer>
               
 </body>
 

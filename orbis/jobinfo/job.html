@@ -36,7 +36,6 @@
                                          </div>
                                 </ul>    
                         </div>
-</body>
 <br> <br>
         <div>
                 <h1 id="title" style="font-size: 100px">Jobs</h1>
@@ -45,85 +44,88 @@
         <p id="info">What is your reason you want to work at Orbis? To fly a plane? To manage tickets? To save the environment?<br>You're next career at Orbis is only a click away. Learn more about each job by clicking on the image.</p>
 
         <div class="row">
-                        <div class="column">
-                          <a class="trigger_popup_fricc"><img class="imagejobs" src="images/pilot.png"> </a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/flightattendant.png"></a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/itmanager.png"></a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
+            <div class="column">
+                          <a onclick="pop()" class="btn"><img class="imagejobs" src="images/pilot.png"> </a>
+                          <div id="box">
+                              <span class="check"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Pilot</span> Average Salary: $150,000<br> Requirements: Airline Transport Pilot License<br>Description: The pilot flies and navigates our planes.</h1>
+                              <a onclick="pop()" class="close">Close</a>
+                              
+                          </div>
+                        <a onclick="pop2()" class="btn2"><img class="imagejobs" src="images/flightattendant.png"></a>
+                          <div id="box2">
+                              <span class="check2"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Flight Attendant</span> Average Salary: $50,000<br> Requirements: High School Diploma and Customer Service Experience<br>Description: The Flight Attendant takes care of passengers and tends to their needs, comfort, and safety during flight.</h1>
+                              <a onclick="pop2()" class="close2">Close</a>
+                          </div>
+                        <a onclick="pop3()" class="btn3"><img class="imagejobs" src="images/itmanager.png"></a>
+                          <div id="box3">
+                              <span class="check3"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">IT Manager</span> Average Salary: $107,000<br> Requirements: Bachelor's Degree in Human Resources and Prior Experience leading a Team<br>Description: The IT manager will lead a team with which you will manage technology for the airline.</h1>
+                              <a onclick="pop3()" class="close3">Close</a>
+                          </div>
                         </div>
-                        <div class="column">
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/corporateposition.png"></a>
-                                <div class="hover_bkgr_fricc">
-                                                <span class="helper"></span>
-                                                <div>
-                                                    <div class="popupCloseButton">X</div>
-                                                    <p>Add any HTML content<br />inside the popup box!</p>
-                                                </div>
-                                            </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/checkin.png"></a>
-                                <div class="hover_bkgr_fricc">
-                                                <span class="helper"></span>
-                                                <div>
-                                                    <div class="popupCloseButton">X</div>
-                                                    <p>Add any HTML content<br />inside the popup box!</p>
-                                                </div>
-                                            </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/customercenter.png"></a>
-                                <div class="hover_bkgr_fricc">
-                                                <span class="helper"></span>
-                                                <div>
-                                                    <div class="popupCloseButton">X</div>
-                                                    <p>Add any HTML content<br />inside the popup box!</p>
-                                                </div>
-                                            </div>
+            <div class="column">
+                        <a onclick="pop4()" class="btn4"><img class="imagejobs" src="images/corporateposition.png"></a>
+                            <div id="box4">
+                              <span class="check4"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Corporate Position</span> Average Salary: $80,000<br> Requirements: Post Secondary Education<br>Description: Someone in corporate position will manage company's day to day activities and develop programs to improve the company.</h1>
+                              <a onclick="pop4()" class="close4">Close</a>
+                          </div>
+                        <a onclick="pop5()" class="btn5"><img class="imagejobs" src="images/checkin.png"></a>
+                        <div id="box5">
+                            <span class="check5"></span>
+                            <h1><span style="font-size: 40px; font-weight:bold;">Check-in Person</span> Average Salary: $50,000<br> Requirements: High School Diploma, a Two year College Degree, and Basic Computer Skills<br>Description: The Check-in person(Ticket Agent) will greet customers, check bags, and assign seats on the plane.</h1>
+                            <a onclick="pop5()" class="close5">Close</a>
                         </div>
-                        <div class="column">
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/financialmanager.png"></a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/baggagemanager.png"></a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
-                        <a class="trigger_popup_fricc"><img class="imagejobs" src="images/planter.png"></a>
-                          <div class="hover_bkgr_fricc">
-                                        <span class="helper"></span>
-                                        <div>
-                                            <div class="popupCloseButton">X</div>
-                                            <p>Add any HTML content<br />inside the popup box!</p>
-                                        </div>
-                                    </div>
+                        <a onclick="pop6()" class="btn6"><img class="imagejobs" src="images/customercenter.png"></a>
+                          <div id="box6">
+                              <span class="check6"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Customer Center</span> Average Salary: $32,000<br> Requirements: High School Diploma and Customer Service Experience<br>Description: The Customer Center person will help customers with itinerary changes, flight reservations, baggage concerns and questions, and the frequent planter program.</h1>
+                              <a onclick="pop6()" class="close6">Close</a>
                         </div>
+            </div>
+            <div class="column">
+                        <a onclick="pop7()" class="btn7"><img class="imagejobs" src="images/financialmanager.png"></a>
+                        <div id="box7">
+                            <span class="check7"></span>
+                            <h1><span style="font-size: 40px; font-weight:bold;">Financial Manager</span> Average Salary: $125,000<br> Requirements: Bachelors degree in finance, accounting. economics, or business administration<br>Description: The Financial Manager will manage a team with which one will review financial reports, monitor accounts, and prepare financial forecasts and reports.</h1>
+                            <a onclick="pop7()" class="close7">Close</a>
+                        </div>
+                        <a onclick="pop8()" class="btn8"><img class="imagejobs" src="images/baggagemanager.png"></a>
+                          <div id="box8">
+                              <span class="check8"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Baggage Handler</span> Average Salary: $23,000<br> Requirements: High School Diploma<br>Description: The Baggage Manager will make sure that all cargo is laoded and unloaded properly.</h1>
+                              <a onclick="pop8()" class="close8">Close</a>
+                          </div>
+                          <a onclick="pop9()" class="btn9"><img class="imagejobs" src="images/planter.png"></a>
+                          <div id="box9">
+                              <span class="check9"></span>
+                              <h1><span style="font-size: 40px; font-weight:bold;">Planter</span> Average Salary: $50,000<br> Requirements: High School Diploma<br> Description: The Planter will plant the trees for Orbis.</h1>
+                              <a onclick="pop9()" class="close9">Close</a>
+                          </div>
                 </div>
+                <footer>
+                        <div class="footer">
+                                <br> <br>
+                        <ul id="left">
+                                <li>
+                                        <a href=""><img id="footerimage" src="images/google.png"></a>
+                                </li>
+                                <li>
+                                        <a href=""><img id="footerimage"src="images/facebook.png"></a>
+                                </li>
+                                <li>
+                                        <a href=""><img id="footerimage" src="images/instagram.png"></a>
+                                </li>
+                                <li>
+                                        <a id="credits" href="../credits/credits.html">Credits</a>
+                                </li>
+                        </ul>
+                        <br><br>
+                </div>
+                </footer>
+                
 <script>
          window.onscroll = function() {myFunction()};
 var navbar = document.getElementById("navbar");
@@ -135,16 +137,106 @@ function myFunction() {
         navbar.classList.remove("sticky");
         }
 }
-$(window).load(function () {
-    $(".trigger_popup_fricc").click(function(){
-       $('.hover_bkgr_fricc').show();
-    });
-    $('.hover_bkgr_fricc').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-    $('.popupCloseButton').click(function(){
-        $('.hover_bkgr_fricc').hide();
-    });
-});
+    var c = 0;
+    function pop() {
+        if(c == 0){
+            document.getElementById("box").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop2() {
+        if(c == 0){
+            document.getElementById("box2").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box2").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop3() {
+        if(c == 0){
+            document.getElementById("box3").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box3").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop4() {
+        if(c == 0){
+            document.getElementById("box4").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box4").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop5() {
+        if(c == 0){
+            document.getElementById("box5").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box5").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop6() {
+        if(c == 0){
+            document.getElementById("box6").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box6").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop7() {
+        if(c == 0){
+            document.getElementById("box7").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box7").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop8() {
+        if(c == 0){
+            document.getElementById("box8").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box8").style.display = "none";
+            c = 0;
+
+    }
+    }
+    var c = 0;
+    function pop9() {
+        if(c == 0){
+            document.getElementById("box9").style.display = "block";
+            c = 1;
+        }else{
+            document.getElementById("box9").style.display = "none";
+            c = 0;
+
+    }
+    }
+
 </script>
+</body>
 </html>

@@ -13,6 +13,9 @@
 #logos{
     display: none;
 }
+#navbar {
+    z-index: 1000;
+}
 
 #navbar ul {
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -71,6 +74,7 @@
     border: 4px green;
     position: relative;
     top:200px;
+    z-index: 20;
 }
 
 #sideimage{
@@ -132,6 +136,42 @@
 }
 #treecounter {
     position:relative;
-    left: 400px;
+    left: 30%;
+    bottom: 200px;
     
 }
+.footer {
+    background-color: #46bc22
+}
+#left {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+#footerimage {
+    width:50px;
+    float: left;
+    margin: 10px;
+}
+#credits {
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   font-size:30px;
+   display:inline-block;
+   color:rgb(0, 0, 0);
+   text-decoration: none;
+   float:right;
+   margin-right: 20px;
+   position:relative;
+   top:15px;
+}
+#credits:hover {
+    color: rgb(95, 95, 95);
+}
+

@@ -201,8 +201,8 @@ td {
   background-color:#46bc22;
   padding-left: 26px;
   padding-right: 40px;
-  padding-bottom: 125px;
-  padding-top: 6px;
+  padding-bottom: 143px;
+  padding-top: 23px;
 }
 #middlelink {
   font-family: "HelveticaNeue-Thin", "Helvetica Neue Thing", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -271,7 +271,7 @@ h2 {
   font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
 }
-/* Tooltip container */
+
 .tooltip {
   position: relative;
   display: inline-block;
@@ -280,7 +280,7 @@ h2 {
   margin: 8px;
 }
 
-/* Tooltip text */
+
 .tooltip .tooltiptext {
   font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 300;
@@ -293,19 +293,19 @@ h2 {
   border-radius: 6px;
   margin: 5px;
 
-  /* Position the tooltip text */
+
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
   margin-left: -60px;
 
-  /* Fade in tooltip */
+
   opacity: 0;
   transition: opacity 0.3s;
 }
 
-/* Tooltip arrow */
+
 .tooltip .tooltiptext::after {
   content: "";
   position: absolute;
@@ -317,7 +317,7 @@ h2 {
   border-color: #555 transparent transparent transparent;
 }
 
-/* Show the tooltip text when you mouse over the tooltip container */
+
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -338,4 +338,38 @@ h2 {
 .tooltip {
   margin-left: 10%;
   top: 5px;
+}
+.footer {
+  background-color: #46bc22
+}
+#left {
+  font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  list-style-type: none;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+#footerimage {
+  width:50px;
+  float: left;
+  margin: 10px;
+}
+#credits {
+  font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+ font-weight: 300;
+ font-size:30px;
+ display:inline-block;
+ color:rgb(0, 0, 0);
+ text-decoration: none;
+ float:right;
+ margin-right: 20px;
+ position:relative;
+ top:15px;
+}
+#credits:hover {
+  color: rgb(95, 95, 95);
 }

@@ -62,65 +62,25 @@ display: inline-block;
     bottom: 93px;
     z-index: 100;
   }
-
-  #form {
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-weight: 300;
-  }
-  input[type=submit] {
-    width:200px;
-    height: 50px;
-    background-color: #46bc22;
-    border-radius: 25px;
-    margin: 10px;
-    margin-left: 45%;
-    font-family: "HelveticaNeue-UltraLight", "Helvetica Neue Ultra Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-   font-size: 30px;
-  }
-
-  #basic {
-    background-color: #46bc22;
-    margin:20px;
-    border-radius: 15px;
-  }
-
-  #legend {
-    font-size: 30px;
-    position: relative;
-    bottom: 14px;
-  }
-  .footer {
-    background-color: #46bc22
-}
-#left {
-    font-family: "HelveticaNeue-Thin", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    list-style-type: none;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-}
-#footerimage {
-    width:50px;
-    float: left;
-    margin: 10px;
-}
-#credits {
+h2{
     font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    font-weight: 300;
-   font-size:30px;
-   display:inline-block;
-   color:rgb(0, 0, 0);
-   text-decoration: none;
-   float:right;
-   margin-right: 20px;
-   position:relative;
-   top:15px;
+   text-align:center;
+   font-size: 50px;
 }
-#credits:hover {
-    color: rgb(95, 95, 95);
+h3{
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   text-align:center;
+   font-size: 30px;
+}
+p{
+    font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   text-align:center;
+}
+#creditbox {
+    background-color:#46bc22;
+    float:left;
+    margin-left:4%
 }
