@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div id="navbar">
+				<ul class="inline">
+						<li>
+								<a href="../home/index.html">Home</a>
+						</li>
+						<li>
+								<a href="../booking/plane.html" href="javascript:void(0)">Booking/Times</a>
+						</li>
+						<li> 
+								<a href="../programs/program.html" href="javascript:void(0)">Skytrees</a>
+						</li>
+						<li>
+								<a href="../jobinfo/job.html" href="javascript:void(0)">Jobs</a>
+						</li>
+						<li>
+										<a href="../apply/apply.html" href="javascript:void(0)">Apply</a>
+						</li>
+						<div id="earthlogo" style="display: inline-block"></div>
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:32.5px; margin-left:170px; margin-top:10px;" src="images/logoearth.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:4.1px" src="images/logor.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:7.7px" src="images/logob.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:1px" src="images/logoi.png" alt="logo">
+										<img class="earthlogorest" style="vertical-align:text-bottom; width:6.4px" src="images/logos.png" alt="logo">
+						 </div>
+				</ul>    
+		</div>
+		<br><br>
+        <img id="line" src="images/line.png">
+<div class="booking-form-box">
+<div class="radio-btn">
+<input type="radio" class="btn" name="check" checked="checked">
+<span>Roundtrip</span>
+<input type="radio" class="btn" name="check"><span>One Way</span>
+<input type="radio" class="btn" name="check"><span>Multiple Cities</span>
+</div>
+
+<div class="booking-form"></div>
+<label>Credit Card Number:</label>
+<input type="number" class="form-control" placeholder="Credit Card Number">
+<label>Flying From:</label>
+<input type="text" class="form-control" placeholder="City or Airport">
+<label>Flying To:</label>
+<input type="text" class="form-control" placeholder="City or Airport">
+
+<div class="input-grp">
+<label>Departing:</label>
+<input type="date" class="form-control select-date">
+</div>
+
+<div class="input-grp">
+<label>Returning:</label>
+<input type="date" class="form-control select-date">
+</div>
+
+<div class="input-grp">
+<label>Adults:</label>
+<input type="number" class="form-control" value="1">
+</div>
+
+<div class="input-grp">
+<label>Children:</label>
+<input type="number" class="form-control" value="0">
+</div>
+
+<div class="input-grp">
+<label>Travel Class:</label>
+<select class="custom-select">
+    <option value="1">Economy Class</option>
+    <option value="2">Business Class</option>
+</select>
+</div>
+
+<div class="input-grp">
+<button type="button" class="btn btn-primary flight">Show Flights</button>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
+
+<script>
+        window.onscroll = function() {myFunction()};
+    
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+    } else {
+            navbar.classList.remove("sticky");
+            }
+    }
+    </script>
+
